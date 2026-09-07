@@ -21,10 +21,19 @@ export function Footer() {
           <p className="text-xs text-white/60 font-light">
             {PERSONAL_INFO.education} • {PERSONAL_INFO.institution}
           </p>
-          <div className="text-xs text-white/50 flex flex-wrap gap-x-4 gap-y-1 pt-1 font-mono font-light">
-            <a href={`mailto:${PERSONAL_INFO.email}`} className="hover:text-red-400 transition-colors break-all">
-              {PERSONAL_INFO.email}
+          <div className="text-xs text-white/50 flex flex-wrap items-center gap-x-3 gap-y-1.5 pt-1 font-mono font-light">
+            <a href="mailto:thakurdhruv@gmail.com" className="hover:text-red-400 transition-colors">
+              thakurdhruv@gmail.com
             </a>
+            <span className="text-white/20 hidden sm:inline">•</span>
+            <a href="mailto:milindt.102@gmail.com" className="hover:text-red-400 transition-colors">
+              milindt.102@gmail.com
+            </a>
+            <span className="text-white/20 hidden sm:inline">•</span>
+            <a href="mailto:ep24btech11010@iith.ac.in" className="hover:text-red-400 transition-colors">
+              ep24btech11010@iith.ac.in
+            </a>
+            <span className="text-white/20 hidden sm:inline">•</span>
             <span>{PERSONAL_INFO.phone}</span>
           </div>
         </div>

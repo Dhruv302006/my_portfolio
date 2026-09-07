@@ -98,7 +98,7 @@ export function Navbar() {
             Resume ↗
           </a>
           <a
-            href="mailto:ep24btech11010@iith.ac.in"
+            href="mailto:thakurdhruv@gmail.com"
             className="px-4 py-1.5 rounded-full bg-white text-black hover:bg-white/90 transition-all font-medium text-[13px] tracking-wide cursor-pointer shadow-md"
           >
             Get in touch
@@ -176,7 +176,7 @@ export function Navbar() {
           Resume ↗
         </a>
         <a
-          href="mailto:ep24btech11010@iith.ac.in"
+          href="mailto:thakurdhruv@gmail.com"
           onClick={closeMobileMenu}
           className="text-white text-[24px] sm:text-[28px] font-light underline underline-offset-4 hover:text-emerald-400 transition-colors"
         >

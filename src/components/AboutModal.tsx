@@ -156,8 +156,11 @@ export const AboutModal: React.FC<AboutModalProps> = ({ isOpen, onClose }) => {
 
         {/* Footer */}
         <div className="pt-3 border-t border-white/10 flex items-center justify-between flex-wrap gap-3">
-          <div className="text-xs text-white/70 font-light">
-            Direct Contact: <a href={`mailto:${PERSONAL_INFO.email}`} className="text-red-400 underline">{PERSONAL_INFO.email}</a>
+          <div className="text-xs text-white/70 font-light flex flex-wrap items-center gap-x-2 gap-y-1">
+            <span>Direct Contact:</span>
+            <a href="mailto:thakurdhruv@gmail.com" className="text-red-400 underline">thakurdhruv@gmail.com</a>
+            <span className="text-white/30">•</span>
+            <a href="mailto:milindt.102@gmail.com" className="text-red-400 underline">milindt.102@gmail.com</a>
           </div>
           <button
             type="button"

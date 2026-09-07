@@ -2,13 +2,13 @@ import { useState } from 'react';
 import { PERSONAL_INFO } from '../data/portfolioData';
 
 export default function AboutSection() {
-  const [copied, setCopied] = useState(false);
+  const [copiedEmail, setCopiedEmail] = useState<string | null>(null);
 
-  const handleCopyEmail = async () => {
+  const handleCopyEmail = async (email: string) => {
     try {
-      await navigator.clipboard.writeText(PERSONAL_INFO.email);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
+      await navigator.clipboard.writeText(email);
+      setCopiedEmail(email);
+      setTimeout(() => setCopiedEmail(null), 2000);
     } catch {
       // Fallback
     }
@@ -93,18 +93,53 @@ export default function AboutSection() {
             </div>
           </div>
 
-          {/* Direct Action Links */}
+          {/* Direct Action Links & Email Contacts */}
           <div className="bg-[#0d0707]/90 border border-white/10 hover:border-red-500/40 rounded-2xl p-4 sm:p-5 backdrop-blur-md space-y-3 transition-colors">
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 text-xs">
-              <span className="text-white/60 font-light">Institute Email:</span>
-              <button
-                type="button"
-                onClick={handleCopyEmail}
-                className="text-red-400 font-mono hover:underline flex items-center gap-1 cursor-pointer font-light break-all sm:break-normal text-left sm:text-right"
-              >
-                <span>{PERSONAL_INFO.email}</span>
-                <span className="text-[10px] text-white/40 shrink-0">{copied ? '✓ Copied' : '❐'}</span>
-              </button>
+            <div className="space-y-2 pb-2 border-b border-white/10">
+              {/* Personal Gmail */}
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 text-xs">
+                <span className="text-white/60 font-light">Personal Gmail:</span>
+                <button
+                  type="button"
+                  onClick={() => handleCopyEmail(PERSONAL_INFO.personalEmail)}
+                  className="text-red-400 font-mono hover:underline flex items-center gap-1 cursor-pointer font-light break-all sm:break-normal text-left sm:text-right"
+                >
+                  <span>{PERSONAL_INFO.personalEmail}</span>
+                  <span className="text-[10px] text-white/40 shrink-0">
+                    {copiedEmail === PERSONAL_INFO.personalEmail ? '✓ Copied' : '❐'}
+                  </span>
+                </button>
+              </div>
+
+              {/* Alternate Gmail */}
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 text-xs">
+                <span className="text-white/60 font-light">Alternate Gmail:</span>
+                <button
+                  type="button"
+                  onClick={() => handleCopyEmail(PERSONAL_INFO.alternateEmail)}
+                  className="text-red-400 font-mono hover:underline flex items-center gap-1 cursor-pointer font-light break-all sm:break-normal text-left sm:text-right"
+                >
+                  <span>{PERSONAL_INFO.alternateEmail}</span>
+                  <span className="text-[10px] text-white/40 shrink-0">
+                    {copiedEmail === PERSONAL_INFO.alternateEmail ? '✓ Copied' : '❐'}
+                  </span>
+                </button>
+              </div>
+
+              {/* Institute Email */}
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 text-xs">
+                <span className="text-white/60 font-light">Institute Email:</span>
+                <button
+                  type="button"
+                  onClick={() => handleCopyEmail(PERSONAL_INFO.instituteEmail)}
+                  className="text-red-400 font-mono hover:underline flex items-center gap-1 cursor-pointer font-light break-all sm:break-normal text-left sm:text-right"
+                >
+                  <span>{PERSONAL_INFO.instituteEmail}</span>
+                  <span className="text-[10px] text-white/40 shrink-0">
+                    {copiedEmail === PERSONAL_INFO.instituteEmail ? '✓ Copied' : '❐'}
+                  </span>
+                </button>
+              </div>
             </div>
 
             <div className="pt-2 flex flex-col sm:flex-row items-center gap-2 sm:gap-3">

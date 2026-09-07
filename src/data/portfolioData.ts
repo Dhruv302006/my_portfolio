@@ -705,7 +705,15 @@ export const PERSONAL_INFO = {
   education: 'B.Tech in Engineering Physics',
   institution: 'IIT Hyderabad (Class of 2028)',
   cgpa: '7.6 / 10.0',
-  email: 'ep24btech11010@iith.ac.in',
+  email: 'thakurdhruv@gmail.com',
+  personalEmail: 'thakurdhruv@gmail.com',
+  alternateEmail: 'milindt.102@gmail.com',
+  instituteEmail: 'ep24btech11010@iith.ac.in',
+  emails: [
+    { label: 'Personal Gmail', address: 'thakurdhruv@gmail.com' },
+    { label: 'Alternate Gmail', address: 'milindt.102@gmail.com' },
+    { label: 'Institute Email', address: 'ep24btech11010@iith.ac.in' },
+  ],
   phone: '+91 8104951282',
   location: 'Hyderabad, India',
   links: {
