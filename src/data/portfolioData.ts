@@ -43,7 +43,7 @@ export const PROJECTS: Record<string, ProjectDetail> = {
     tags: ['Node.js', 'Fastify', 'PostgreSQL', 'Redis', 'Apache Kafka', 'Docker'],
     badge: 'Distributed Systems',
     thumbnail: '/projects/wallet/wallet-dashboard.png',
-    githubUrl: 'https://github.com/DhruvThakur',
+    githubUrl: 'https://github.com/Dhruv302006',
     metrics: [
       { label: 'Latency Drop', value: '98.10%', detail: '1,526ms reduced to 29ms core API response' },
       { label: 'Throughput', value: '166+ TPS', detail: 'Zero deadlocks under local peak write load' },
@@ -191,7 +191,7 @@ if (!acquired) {
     tags: ['Python', 'FastAPI', 'Qdrant', 'BM25', 'PyTorch', 'QLoRA', 'Ollama', 'Llama 3.2'],
     badge: 'Applied AI & RAG',
     thumbnail: '/projects/ai_analyst/dashboard-overview.png',
-    githubUrl: 'https://github.com/DhruvThakur',
+    githubUrl: 'https://github.com/Dhruv302006',
     metrics: [
       { label: 'Task Success Gain', value: '+51.43 pp', detail: 'Fine-tuned 1B model boosted from 40% to 91.43%' },
       { label: 'Benchmark Accuracy', value: '100%', detail: '35-case benchmark execution on Llama 3.1 8B' },
@@ -294,7 +294,7 @@ connection.set_authorizer(authorizer_callback)`,
         {
           title: '6. Local Installation & Reproduction Guide',
           content:
-            'To run the Aura Analyst desk locally with Ollama and FastAPI:\n\n1. Pull Ollama base model:\n   `ollama pull llama3.1:8b`\n\n2. Clone repository & install dependencies:\n   `git clone https://github.com/DhruvThakur/ai-financial-analyst.git`\n   `cd ai-financial-analyst && pip install -r requirements.txt`\n\n3. Initialize vector embeddings & SQLite database:\n   `python scripts/ingest_policies.py`\n   `python scripts/seed_ledgers.py`\n\n4. Start FastAPI server:\n   `uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload`\n\n5. Open the web UI at `http://localhost:8000` to interact with the analyst desk.',
+            'To run the Aura Analyst desk locally with Ollama and FastAPI:\n\n1. Pull Ollama base model:\n   `ollama pull llama3.1:8b`\n\n2. Clone repository & install dependencies:\n   `git clone https://github.com/Dhruv302006/ai-financial-analyst.git`\n   `cd ai-financial-analyst && pip install -r requirements.txt`\n\n3. Initialize vector embeddings & SQLite database:\n   `python scripts/ingest_policies.py`\n   `python scripts/seed_ledgers.py`\n\n4. Start FastAPI server:\n   `uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload`\n\n5. Open the web UI at `http://localhost:8000` to interact with the analyst desk.',
         },
       ],
     },
@@ -307,7 +307,7 @@ connection.set_authorizer(authorizer_callback)`,
     tags: ['React.js', 'Node.js (Express)', 'Socket.io', 'PostgreSQL', 'PostGIS', 'Redis', 'Nginx', 'Docker'],
     badge: 'Real-Time Telemetry',
     thumbnail: '/projects/maplink/room-tracking.png',
-    githubUrl: 'https://github.com/DhruvThakur',
+    githubUrl: 'https://github.com/Dhruv302006',
     metrics: [
       { label: 'DB Write Reduction', value: '98.0%', detail: '50 writes/s reduced to 0.2 writes/s via bulk flusher' },
       { label: 'Historical Query Speedup', value: '41.1x', detail: '424.76ms down to 10.34ms via GiST & composite indexes' },
@@ -474,7 +474,7 @@ async function flushLocationBuffer() {
     badge: 'FinTech & ML Platform',
     thumbnail: '/projects/aura_intel/overview-dashboard.png',
     liveUrl: 'https://dhruv302006.github.io/FinTech_Platform/',
-    githubUrl: 'https://github.com/DhruvThakur',
+    githubUrl: 'https://github.com/Dhruv302006',
     metrics: [
       { label: 'Ledger Audit Correctness', value: '100%', detail: '1,801 transactions verified via sequential replay' },
       { label: 'Anomaly Radar', value: '33 Outliers', detail: 'Isolation Forest flagged statistical deviations at 86% confidence' },
@@ -656,7 +656,7 @@ def train_anomaly_radar(feature_matrix: pd.DataFrame) -> pd.DataFrame:
         {
           title: '7. Live Deployment & Quickstart',
           content:
-            'Experience the live production application deployed on GitHub Pages:\n\n🔗 **Live Application URL**: [https://dhruv302006.github.io/FinTech_Platform/](https://dhruv302006.github.io/FinTech_Platform/)\n\nLocal Development Setup:\n```bash\n# 1. Clone repository\ngit clone https://github.com/DhruvThakur/FinTech_Platform.git\ncd FinTech_Platform\n\n# 2. Install dependencies\nnpm install\n\n# 3. Run development server\nnpm run dev\n\n# 4. Build for production\nnpm run build\n```',
+            'Experience the live production application deployed on GitHub Pages:\n\n🔗 **Live Application URL**: [https://dhruv302006.github.io/FinTech_Platform/](https://dhruv302006.github.io/FinTech_Platform/)\n\nLocal Development Setup:\n```bash\n# 1. Clone repository\ngit clone https://github.com/Dhruv302006/FinTech_Platform.git\ncd FinTech_Platform\n\n# 2. Install dependencies\nnpm install\n\n# 3. Run development server\nnpm run dev\n\n# 4. Build for production\nnpm run build\n```',
         },
       ],
     },
@@ -717,8 +717,8 @@ export const PERSONAL_INFO = {
   phone: '+91 8104951282',
   location: 'Hyderabad, India',
   links: {
-    github: 'https://github.com/DhruvThakur',
-    linkedin: 'https://linkedin.com/in/dhruvthakur',
+    github: 'https://github.com/Dhruv302006',
+    linkedin: 'https://www.linkedin.com/in/dhruv-thakur-693a46320/',
     leetcode: 'https://leetcode.com',
   },
   positions: [

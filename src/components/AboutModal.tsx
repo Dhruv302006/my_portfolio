@@ -161,6 +161,10 @@ export const AboutModal: React.FC<AboutModalProps> = ({ isOpen, onClose }) => {
             <a href="mailto:thakurdhruv@gmail.com" className="text-red-400 underline">thakurdhruv@gmail.com</a>
             <span className="text-white/30">•</span>
             <a href="mailto:milindt.102@gmail.com" className="text-red-400 underline">milindt.102@gmail.com</a>
+            <span className="text-white/30">•</span>
+            <a href="https://github.com/Dhruv302006" target="_blank" rel="noopener noreferrer" className="text-red-400 hover:underline">GitHub ↗</a>
+            <span className="text-white/30">•</span>
+            <a href="https://www.linkedin.com/in/dhruv-thakur-693a46320/" target="_blank" rel="noopener noreferrer" className="text-red-400 hover:underline">LinkedIn ↗</a>
           </div>
           <button
             type="button"

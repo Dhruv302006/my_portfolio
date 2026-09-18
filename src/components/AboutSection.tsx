@@ -142,22 +142,30 @@ export default function AboutSection() {
               </div>
             </div>
 
-            <div className="pt-2 flex flex-col sm:flex-row items-center gap-2 sm:gap-3">
+            <div className="pt-2 grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-2.5">
               <a
                 href={`${import.meta.env.BASE_URL}resume.pdf`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:flex-1 text-center py-2.5 rounded-xl bg-red-600 text-white text-xs font-light tracking-wide hover:bg-red-500 transition-all shadow-[0_0_15px_rgba(239,68,68,0.3)]"
+                className="w-full text-center py-2.5 rounded-xl bg-red-600 text-white text-xs font-light tracking-wide hover:bg-red-500 transition-all shadow-[0_0_15px_rgba(239,68,68,0.3)] flex items-center justify-center gap-1"
               >
-                View Full Resume ↗
+                <span>Resume ↗</span>
               </a>
               <a
-                href="https://github.com/DhruvThakur"
+                href={PERSONAL_INFO.links.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:flex-1 text-center py-2.5 rounded-xl border border-white/20 text-white/80 text-xs font-light hover:bg-white/10 hover:border-red-500/30 transition-colors"
+                className="w-full text-center py-2.5 rounded-xl border border-white/20 text-white/80 text-xs font-light hover:bg-white/10 hover:border-red-500/30 transition-colors flex items-center justify-center gap-1"
               >
-                GitHub Profile
+                <span>GitHub ↗</span>
+              </a>
+              <a
+                href={PERSONAL_INFO.links.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full text-center py-2.5 rounded-xl border border-white/20 text-white/80 text-xs font-light hover:bg-white/10 hover:border-red-500/30 transition-colors flex items-center justify-center gap-1"
+              >
+                <span>LinkedIn ↗</span>
               </a>
             </div>
           </div>

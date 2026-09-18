@@ -40,7 +40,7 @@ export function Footer() {
 
         <div className="flex flex-wrap items-center gap-4 text-xs font-light">
           <a
-            href="https://github.com/DhruvThakur"
+            href="https://github.com/Dhruv302006"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white/70 hover:text-red-400 transition-colors"
@@ -49,7 +49,7 @@ export function Footer() {
           </a>
           <span className="text-white/20">•</span>
           <a
-            href="https://linkedin.com/in/dhruvthakur"
+            href="https://www.linkedin.com/in/dhruv-thakur-693a46320/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white/70 hover:text-red-400 transition-colors"

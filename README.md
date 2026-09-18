@@ -80,4 +80,4 @@ npm run deploy
 ---
 
 ## 📄 License
-MIT © [Dhruv Thakur](https://github.com/DhruvThakur)
+MIT © [Dhruv Thakur](https://github.com/Dhruv302006)
